@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <a href="" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Khally</span>Prog</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard' ></i></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx bx-store-alt' ></i>Shop</a></li>
+            <li class="active" ><a href="#" class="active"><i class='bx bx-analyse'></i>Analytics</a></li>
+            <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
+            <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="" class="logout">
+                    <i class='bx bx-log-out-circle'>Logout</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end of sidebar -->
+
+    <!-- main content -->
+    <div class="content">
+
+        <!-- navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search' ></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="image/Picture7.png">
+            </a>
+        </nav>
+
+        <!-- End of navbar -->
+
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                            Analytics
+                        </a></li>
+                        /
+                        <li><a href="#" class="active">Shop</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download CSV</span>
+                </a>
+            </div>
+
+            <!-- insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            1,074
+                        </h3>
+                        <p>Paid Order</p>
+                    </span>
+                </li>
+                    <li>
+                        <i class='bx bx-show-alt'></i>
+                        <span class="info">
+                            <h3>
+                                3,944
+                            </h3>
+                            <p>Site Visit</p>
+                        </span>
+                </li>
+                    <li>
+                        <i class='bx bx-line-chart'></i>
+                        <span class="info">
+                            <h3>
+                                14,721
+                            </h3>
+                            <p>Searches</p>
+                        </span>
+                </li>
+                    <li>
+                        <i class='bx bx-dollar-circle'></i>
+                        <span class="info">
+                            <h3>
+                                $6,742
+                            </h3>
+                            <p>Total Sales</p>
+                        </span>
+                </li>
+            </ul>
+            <!-- end of insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Recent Order</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Users</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="image/2.JPG" alt="">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="image/2.JPG" alt="">
+                                    <p>Mhusty B</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="Pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="image/2.JPG" alt="">
+                                    <p>I Khally</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Reminders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="Completed">
+                            <div class="task-title">
+                            <i class='bx bx-check-circle'></i>
+                            <p>Start our Meeting</p>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                    </li>
+                    <li class="not-Completed">
+                        <div class="task-title">
+                        <i class='bx bx-check-circle'></i>
+                        <p>Analyse Our Site</p>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <li class="Completed">
+                        <div class="task-title">
+                            <i class='bx bx-x-circle'></i>
+                        <p>Available</p>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                        
+                    </ul>
+                </div>
+                    <!-- end of reminders -->
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
